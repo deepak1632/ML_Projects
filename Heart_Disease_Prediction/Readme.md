@@ -17,4 +17,17 @@ The project also includes a **Streamlit web app** for user interaction, where us
 ---
 
 ## 📂 Project Structure
-
+Heart_Diseases_Project/
+│── app.py # Streamlit app
+│── models/ # Saved pickle models
+│ ├── Decision_Tree.pkl
+│ ├── RandomForest.pkl
+│ ├── LogisticRegression.pkl
+│ ├── SVM.pkl
+│ ├── KNN.pkl
+│── data/ # Dataset folder
+│ └── heart.csv
+│── notebooks/ # Jupyter notebooks for analysis
+│ └── EDA_Modeling.ipynb
+│── requirements.txt # Dependencies
+│── README.md # Project documentation
