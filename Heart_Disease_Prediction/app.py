@@ -344,17 +344,4 @@ with tab3:
     )
 
     st.plotly_chart(fig, use_container_width=True)
-# Or we can use this simpler version
-# with tab3:
-#     import plotly.express as px
-#     data = {'RandomForest(Tuned)': 81.97,
-#             'Random Forest': 78.69,
-#             'Naive Bayes': 77.05,
-#             'LogisticRegression' : 77.05,
-#             'Decision Trees': 73.77 ,
-#             'SVC': 68.85 }
-#     Models = list(data.keys())
-#     Accuracies  = list(data.values())
-#     df = pd.DataFrame(list(zip(Models,Accuracies)),columns = ['Models', 'Accuracies'])
-#     fig = px.bar(df, y = 'Accuracies', x = 'Models')
-#     st.plotly_chart(fig)
+ 
