@@ -17,6 +17,7 @@ The project also includes a **Streamlit web app** for user interaction, where us
 ---
 
 ## 📂 Project Structure
+```
 Heart_Diseases_Project/
 │── app.py # Streamlit app
 │── models/ # Saved pickle models
@@ -31,3 +32,4 @@ Heart_Diseases_Project/
 │ └── EDA_Modeling.ipynb
 │── requirements.txt # Dependencies
 │── README.md # Project documentation
+```
