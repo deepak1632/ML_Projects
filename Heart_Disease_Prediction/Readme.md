@@ -69,9 +69,8 @@ Heart_Diseases_Project/
 ---
 
 ## 🚀 How to Run the Project
-
-### 1️⃣ Clone the Repository
 ```
+### 1️⃣ Clone the Repository
 bash
 git clone https://github.com/yourusername/Heart_Diseases_Project.git
 cd Heart_Diseases_Project
@@ -94,3 +93,4 @@ Open the URL shown in terminal (default: http://localhost:8501).
 * Deploy app on Streamlit Cloud / Heroku.
 * Integrate with real-world health datasets.
 * Improve UI/UX with visual explanations.
+---
