@@ -158,6 +158,8 @@ def predict_heart_disease(data):
     predictions.clear()  # reset before each prediction
     for modelname in modelsnames:
         model_path = os.path.join(os.path.dirname(__file__), "pickle_files", modelname)
+        with open(model_path, "rb") as f:
+            model = pickle.load(f)
         prediction = model.predict(data)
         predictions.append(prediction)
     return predictions  # Return all Predictions
