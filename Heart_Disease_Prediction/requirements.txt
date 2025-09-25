@@ -1,0 +1,16 @@
+# Core
+streamlit
+pandas
+numpy
+
+# Machine Learning
+scikit-learn
+
+# Visualization
+matplotlib
+seaborn
+plotly
+
+# Model Persistence
+joblib
+pickle-mixin
