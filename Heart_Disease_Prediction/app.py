@@ -144,9 +144,10 @@ modelsnames = [
      'SVC.pkl', 
      ]
 
-predictions = []
+
 
 def predict_heart_disease(data):
+    predictions = []
     # ✅ Rename columns to match training feature names
     data = data.rename(columns={
         "number_of_major_vessels": "num_major_vessels",
@@ -273,7 +274,9 @@ with tab2:
             # Predict with each model and add column
 
             for algo, model_file in zip(algonames, modelsnames):
-                model = pickle.load(open(model_file, 'rb'))
+                model_path = os.path.join(os.path.dirname(__file__), "pickle_files", model_file)
+                with open(model_path, "rb") as f:
+                    model = pickle.load(f)
                 input_data[f'Prediction_{algo}'] = model.predict(input_data[expected_features])  
            
             # Save results
