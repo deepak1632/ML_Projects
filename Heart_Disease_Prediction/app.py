@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import pickle 
 import base64
+import os
 
 # Function to create a download link for the CSV file
 def get_binary_file_downloader_html(df, filename = "file.csv", text = "Download CSV file"):
@@ -155,7 +156,7 @@ def predict_heart_disease(data):
 
     predictions.clear()  # reset before each prediction
     for modelname in modelsnames:
-        model = pickle.load(open(modelname, 'rb'))
+        model_path = os.path.join(os.path.dirname(__file__), "pickle_files", modelname)
         prediction = model.predict(data)
         predictions.append(prediction)
     return predictions  # Return all Predictions
