@@ -1,4 +1,5 @@
 # 🎧 Beats Per Minute (BPM) Prediction App
+#### Thumbnail
 ![App Screenshot]("https://github.com/user-attachments/assets/1de65839-d713-4fa5-9087-91a5dbd23ab2")  
 
 📘 Project Overview
