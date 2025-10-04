@@ -119,7 +119,7 @@ with tab1:
     st.markdown(
     """
     <div class='card' style='background-color: #f9f9ff; padding: 10px; border-radius: 10px;'>
-        <h2 style='color: #0072B5; text-align: center;'>Project Overview 🎵</h2>
+        <h2 style='color: #4CAF50; text-align: center;'>Project Overview 🎵</h2>
     </div>
     """,
     unsafe_allow_html=True
