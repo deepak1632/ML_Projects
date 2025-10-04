@@ -95,7 +95,7 @@ def load_models_and_scalers(folder_path="pickles_files"):
                 scalers[model_name] = StandardScaler()  # fallback
     return models, scalers
 
-models, scalers = load_models_and_scalers("pickles_files")
+models, scalers = load_models_and_scalers("Beats_Per_Minute_Prediction/pickles_files")
 st.sidebar.success(f"✅ {len(models)} model(s) & scalers loaded from folder")
 
 
