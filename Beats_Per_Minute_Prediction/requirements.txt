@@ -6,4 +6,3 @@ xgboost
 lightgbm
 seaborn
 matplotlib
-pickle
