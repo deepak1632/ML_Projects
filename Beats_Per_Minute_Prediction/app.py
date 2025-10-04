@@ -116,7 +116,14 @@ feature_names = [
 # 🏠 Home Tab
 # ------------------------------
 with tab1:
-    st.markdown("<div class='card'><h2>Project Overview 🎵</h2>", unsafe_allow_html=True)
+    st.markdown(
+    """
+    <div class='card' style='background-color: #f9f9ff; padding: 10px; border-radius: 10px;'>
+        <h2 style='color: #0072B5; text-align: center;'>Project Overview 🎵</h2>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
     st.markdown("""
         - **Objective:** Predict BPM using song features.
         - **Columns:** RhythmScore, AudioLoudness, VocalContent, AcousticQuality,
